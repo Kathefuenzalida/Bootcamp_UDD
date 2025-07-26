@@ -1,0 +1,19 @@
+{
+  "name": "exproyecto",
+  "version": "1.0.0",
+  "description": "Este proyecto corresponde al desarrollo del sitio web de **Our Fire**, una marca dedicada a la fabricación de fogones de metal para exteriores. \r El sitio busca reflejar una estética sencilla pero funcional, \r destacando los modelos de productos disponibles, junto con testimonios de clientes y un formulario de contacto.",
+  "main": "index.js",
+"scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "start": "nodemon index.js"
+},
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "moment": "^2.30.1"
+  }
+}

@@ -1,0 +1,110 @@
+S4 Ejercicio 1
+mkdir proyecto
+cd proyecto
+mkdir documentos
+mkdir Imagenes
+mkdir codigo
+dir
+cd documentos
+echo > nombre_del_archivo.txt
+copy nombre_del_archivo.txt ..\Codigo
+dir
+move nombre_del_archivo.txt ..\Imagenes
+ren nombre_del_archivo.txt informacion.txt
+dir
+
+------------------------------------------------------
+Ejercicio 2
+mkdir proyecto2
+cd proyecto2
+mkdir experimento1
+mkdir experimento2
+mkdir experimento3
+ls
+cd experimento1
+mkdir datos
+cd datos
+mkdir raw
+mkdir procesados
+mkdir resultados
+cd..
+echo > registro.txt
+cd..
+cd..
+del proyecto2
+s
+-------------------------------------------------------------
+Ejercicio 3
+mkdir miproyecto
+cd miproyecto
+git init
+echo > index.html
+ls
+git add index.html
+git commit -m "agregue archivo html"
+git branch feature
+git branch
+git checkout feature
+echo > Script.js
+InputObject[0]: Hola Mundo
+InputObject[1]:
+ls
+cat script.js
+git status
+git add script.js
+git commit -m "agrego archivo script.js"
+git branch
+git checkout master
+ls
+git merge feature
+ls
+git log
+
+----------------------------------------------------------
+Ejercicio 4
+mkdir ex4
+cd ex4
+git init
+echo > archivo.txt
+git add .
+git commit -m "para que funcione la rama nueva"
+git branch feature/login
+git checkout feature/login
+echo > Index.html
+mkdir css
+cd css
+echo > styles.js
+mkdir  js
+cd js
+echo > script.js
+git add .
+git commit -m "segundo"
+git checkout master
+git branch feature/navbar
+git checkout feature/navbar
+git branch
+git log
+git merge master
+git log
+git merge feature/login
+git log
+
+
+que es la raíz de un proyecto?
+cuando trabajan en ambienet desarrollo significa que esta 
+trabajando cambios de aplicación en una rama test o dev?
+--------------------------------------------------------------
+Ejercicio grupal 
+cd UDD
+$ mkdir tareagirlstech
+$ cd tareagirlstech
+$ git clone https://github.com/UDDBootcamp/fullstack-js-collaborative.git
+$ git init
+$ cd https://github.com/UDDBootcamp/fullstack-js-collaborative.git
+$ cd fullstack-js-collaborative
+$ git branch GirlsTech/feature/odd-even-calculation
+$ git checkout GirlsTech/feature/odd-even-calculation
+$ echo > readmeGirlsTech.txt
+$ git add .
+$ git commit -m "New branch created"
+$ git push --set-upstream origin GirlsTech/feature/odd-even-calculation

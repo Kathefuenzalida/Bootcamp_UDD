@@ -1,0 +1,148 @@
+PS C:\reto4> cd ..
+PS C:\> dir
+
+
+    Directorio: C:\
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        23-08-2023     14:04                Autodesk
+d-----        06-05-2021     20:26                Intel
+d-----        07-12-2019      6:14                PerfLogs
+d-r---        06-04-2025      9:43                Program Files
+d-r---        08-03-2025     11:47                Program Files (x86)
+d-r---        27-04-2021     12:59                Users
+d-----        06-04-2025      9:43                Windows
+
+
+PS C:\> mkdir reto4
+
+
+    Directorio: C:\
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        06-04-2025     11:04                reto4
+
+
+PS C:\> dir
+
+
+    Directorio: C:\
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        23-08-2023     14:04                Autodesk
+d-----        06-05-2021     20:26                Intel
+d-----        07-12-2019      6:14                PerfLogs
+d-r---        06-04-2025      9:43                Program Files
+d-r---        08-03-2025     11:47                Program Files (x86)
+d-----        06-04-2025     11:04                reto4
+d-r---        27-04-2021     12:59                Users
+d-----        06-04-2025      9:43                Windows
+
+
+PS C:\> cd reto4
+PS C:\reto4> git clone https://github.com/Kathefuenzalida/reto4.git
+Cloning into 'reto4'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+PS C:\reto4> echo > reto4.txt
+
+cmdlet Write-Output en la posición 1 de la canalización de comandos
+Proporcione valores para los parámetros siguientes:
+InputObject[0]: Algoritmo ContarParesImpares
+InputObject[1]: Definir numeros Como Entero
+InputObject[2]: Dimension numeros[10] // Defino tamaño del arreglo
+InputObject[3]: Definir i, pares, impares Como Entero
+InputObject[4]: pares <- 0
+InputObject[5]: impares<- 0
+InputObject[6]: //Ciclo para recibir numberarray
+InputObject[7]: Para i<-1 Hasta 10 Hacer
+InputObject[8]: Escribir "Ingresa un número entero: "
+InputObject[9]: Leer numeros[i]
+InputObject[10]: FinPara
+InputObject[11]: //Contar pares e impares
+InputObject[12]: Para i<-1 Hasta 10 Hacer
+InputObject[13]: si (numeros[i] mod 2) = 0 Entonces
+InputObject[14]: pares <- pares + 1
+InputObject[15]: SiNo
+InputObject[16]: impares <- impares + 1
+InputObject[17]: FinSi
+InputObject[18]: FinPara
+InputObject[19]: //Muestro q de números pares e impares ingresados por usuario
+InputObject[20]: Escribir "Cantidad de números pares ingresados: ", pares
+InputObject[21]: Escribir "Cantidad de números impares ingresados: ", impares
+InputObject[22]:
+PS C:\reto4> git add reto4.txt
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\reto4> git init
+Initialized empty Git repository in C:/reto4/.git/
+PS C:\reto4> git add reto4.txt
+PS C:\reto4> git commit -m "agrego archivo reto4"
+[master (root-commit) 0546cc8] agrego archivo reto4
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 reto4.txt
+PS C:\reto4> git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS C:\reto4> git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'origin'
+PS C:\reto4> git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        reto4/
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\reto4> git add reto4.txt
+PS C:\reto4> git commit -m "agrego archivo reto4 txt"
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        reto4/
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\reto4> git add .
+warning: adding embedded git repository: reto4
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> reto4
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached reto4
+hint:
+hint: See "git help submodule" for more information.
+hint: Disable this message with "git config advice.addEmbeddedRepo false"
+PS C:\reto4> git add .
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\reto4> git add .
+PS C:\reto4> git commit -m "agrego archivo reto4.txt"
+[main f1c0325] agrego archivo reto4.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 reto4.txt
+PS C:\reto4> git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 685 bytes | 228.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Kathefuenzalida/reto4.git
+   5fa0f8a..f1c0325  main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\reto4>

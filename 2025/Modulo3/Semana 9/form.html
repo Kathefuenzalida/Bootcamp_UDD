@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en"> //le dejo el idioma que estan los clientes que buscan la info
+<head>
+    <meta charset="UTF-8"> //códifica simbolos y letras en español, cada idioma tiene su propio UTF, y sirve el UTF 8 porque es mas amplio
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">/7 Esto hace que la página sea responsiba y que se adapte a tamaño de pantalla de celular y pc
+    <title>Document</title>//Título pestaña de la página web en el navegador
+</head>
+<body>
+    <form>
+        
+        <div>
+            <label for="nombre"></label> <!--El Label se oculte (esto se hace con CSS)-->
+            <input 
+                type="text" 
+                id="nombre"
+                placeholder="Escribe tu nombre"
+                name="nombre"
+                required
+            >
+        </div>
+    
+        <div>
+            <label for="email"></label>
+            <input 
+                type="email"
+                id="email"
+                placeholder="tuEmail@ejemplos.com"
+                required    
+            >
+        </div>
+
+        <div>
+            <label for="password"></label>
+            <input 
+                type="password"
+                id="password"
+                placeholder="Escribe tu contraseña"
+                required
+            >
+        </div>
+
+        <div>
+            <label for="color"></label>
+            <input type="color" id="color">
+        </div>
+
+        <div>
+            <label for="number"></label>
+            <input type="number" id="number" placeholder="Escribe un número">
+        </div>
+        
+        <div>
+            <label for="date"></label>
+            <input type="date" id="date">
+        </div>
+
+        <div>
+            <label for="checkbox"></label>
+            <input type="checkbox" id="checkbox">
+        </div>
+        <div>
+            <label for="radio"></label>
+            <input type="radio" id="radio">
+        </div>
+        <div>
+            <label for="range"></label>
+            <input 
+                type="range" 
+                id="range"
+                min="5"
+                max="100"    
+            >
+        </div>
+
+        <div>
+            <label for="file"></label>
+            <input 
+                type="file" 
+                id="file"
+                accept=".jpg, .png, .pdf"
+            >
+        </div>
+
+        <div>
+            <label for="biografia"></label>
+            <textarea name="biografia" id="biografia"></textarea>
+        </div>
+
+        <select name="" id="">
+            <option value="alfonso">Alfonso</option>
+            <option value="Jaimito">Jaimito</option>
+            <option value="Juanito">Juanito</option>
+            <option value="Pedro">Pedro</option>
+            <option value="Pablo">Pablo</option>
+            <option value="Panchito">Panchito</option>
+        </select>
+    
+    </form>
+    
+</body>
+</html>
+
+
+
+<!--
+
+const objeto = {
+    nombre: "Juan",
+    edad: 25,
+    ciudad: "Santiago"
+}
+
+-->

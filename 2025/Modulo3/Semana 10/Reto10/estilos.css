@@ -1,0 +1,144 @@
+header img {
+  width: 100px; /* ajusta el tamaño a 100 píxeles de ancho */
+  height: auto; /* para mantener la proporción y no deformar */
+}
+
+header h1 {
+  font-size: 65px;
+  color: #FF5722;
+  font-family: 'Arial', sans-serif;
+  text-align: center;      /* Centra el título */
+  margin: 20px 0;          /* Espacio arriba y abajo */
+}
+header p {
+  font-size: 35px;
+  color: #fffbfd;             /* Color gris oscuro */
+  text-align: center;      /* Centra el texto */
+}
+
+header {
+  background-color: #333333; /* un verde, por ejemplo */
+  color: white; /* para que el texto se vea mejor con el fondo oscuro */
+  padding: 20px; /* para que no quede muy pegado */
+}
+nav ul {
+  list-style: none;        /* Quita los puntos de lista */
+  padding: 0;
+  margin: 0;
+  display: flex;           /* Muestra los <li> en línea horizontal */
+  justify-content: center; /* Centra la lista */
+  gap: 50px;               /* Espacio entre elementos */
+}
+
+nav li a {
+  text-decoration: none;   /* Quita subrayado */
+  color: white;            /* Color del texto */
+  font-weight: bold;       /* Texto en negrita */
+  font-size: 30px;
+}
+
+nav li a:hover {
+  color: #FF5722;          /* Cambia el color al pasar el mouse */
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* cuadrícula adaptable */
+  gap: 20px;
+  padding: 40px;
+  background-color: #f5f5f5; /* fondo suave opcional */
+}
+
+.producto {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 3px solid #FF5722;      /* Borde naranja quemado */
+  padding: 5px;                   /* Espacio entre la imagen y el borde */
+  background-color: white;
+  transition: transform 0.3s ease; /* Suaviza el cambio al hacer hover */
+}
+
+.producto img:hover {
+  transform: scale(1.30); /* Aumenta el tamaño un 5% */
+}
+
+.btn-comprar {
+  background-color: #FF5722;   /* Color del botón */
+  color: white;                /* Color del texto */
+  font-size: 16px;             /* Tamaño del texto */
+  padding: 10px 20px;          /* Espaciado interno */
+  border: none;                /* Quita el borde por defecto */
+  border-radius: 5px;          /* Bordes redondeados */
+  cursor: pointer;             /* Cambia el cursor al pasar */
+  margin-top: 10px;            /* Espacio entre la imagen y el botón */
+  transition: background-color 0.3s ease;
+}
+
+.btn-comprar:hover {
+  background-color: #e64a19;   /* Color más oscuro al pasar el cursor */
+}
+
+.testimonios {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.testimonios h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.testimonio {
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  background-color: white;
+  padding: 20px 30px;
+  border-left: 5px solid #FF5722;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-style: italic;
+}
+
+.testimonio cite {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #666;
+}
+
+footer {
+  background-color: #333333; /* un gris oscuro */
+  color: white;
+  padding: 15px;
+  text-align: center; /* para centrar el texto */
+}
+section {
+  padding: 40px 20px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: 20px 10px;
+    margin-bottom: 20px;
+  }
+}

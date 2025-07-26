@@ -1,0 +1,44 @@
+.boton1 {
+  background-color: #c47867; 
+}
+.boton2 {
+  background-color: #33c1ff; 
+}
+.boton3 {
+  background-color: #234d0f; 
+}
+.boton4 {
+  background-color: #d62885;
+}
+.boton5 {
+  background-color: #ffb833; 
+}
+.boton6 {
+  background-color: #ffb833; 
+}
+.boton7 {
+  background-color: #d62885; 
+}
+.boton8 {
+  background-color: #234d0f;
+}
+.boton9 {
+  background-color: #33c1ff;
+}
+.boton10 {
+  background-color: #c47867;
+}
+nav button {
+  font-size: 100px;
+  padding: 60px 120px;
+  width: 600px;
+  cursor: pointer;
+}
+
+#mensaje {
+  font-size: 2rem;
+  color: green;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}

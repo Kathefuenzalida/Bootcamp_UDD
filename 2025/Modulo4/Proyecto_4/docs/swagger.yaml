@@ -1,0 +1,168 @@
+openapi: 3.0.3
+info:
+  title: API de Reservas Hoteleras
+  version: 1.0.0
+  description: API para gestionar reservas en hoteles con operaciones CRUD y filtros.
+
+servers:
+  - url: http://localhost:3000
+
+paths:
+  /api/reservas:
+    get:
+      summary: Obtener todas las reservas o filtrarlas por query
+      parameters:
+        - in: query
+          name: hotel
+          schema:
+            type: string
+        - in: query
+          name: fecha_inicio
+          schema:
+            type: string
+            format: date
+        - in: query
+          name: fecha_fin
+          schema:
+            type: string
+            format: date
+        - in: query
+          name: tipo_habitacion
+          schema:
+            type: string
+        - in: query
+          name: estado
+          schema:
+            type: string
+        - in: query
+          name: num_huespedes
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Lista de reservas (filtradas o no)
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Reserva'
+
+    post:
+      summary: Crear una nueva reserva
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ReservaInput'
+      responses:
+        '201':
+          description: Reserva creada exitosamente
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Reserva'
+
+  /api/reservas/{id}:
+    get:
+      summary: Obtener una reserva por ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Detalle de la reserva
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Reserva'
+        '404':
+          description: Reserva no encontrada
+
+    put:
+      summary: Actualizar una reserva por ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ReservaInput'
+      responses:
+        '200':
+          description: Reserva actualizada correctamente
+
+    delete:
+      summary: Eliminar una reserva por ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Reserva eliminada exitosamente
+
+components:
+  schemas:
+    Reserva:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 1
+        hotel:
+          type: string
+          example: Hotel No estoy
+        tipo_habitacion:
+          type: string
+          example: doble
+        num_huespedes:
+          type: integer
+          example: 2
+        fecha:
+          type: string
+          format: date
+          example: 2023-05-15
+        fecha_fin:
+          type: string
+          format: date
+          example: 2023-05-20
+        estado:
+          type: string
+          example: confirmada
+
+    ReservaInput:
+      type: object
+      required:
+        - hotel
+        - tipo_habitacion
+        - num_huespedes
+        - fecha
+        - fecha_fin
+        - estado
+      properties:
+        hotel:
+          type: string
+        tipo_habitacion:
+          type: string
+        num_huespedes:
+          type: integer
+        fecha:
+          type: string
+          format: date
+        fecha_fin:
+          type: string
+          format: date
+        estado:
+          type: string

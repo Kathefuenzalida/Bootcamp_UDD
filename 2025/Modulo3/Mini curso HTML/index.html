@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Primera web</title>
+    <style> 
+       table, th, td {
+            border: 1px solid black;
+        }
+       
+    </style>
+</head>
+<body>
+<table style="width: 500px;"> 
+   <thead>  
+    <tr>    
+        <th>Producto</th>
+        <th>Precio</th>
+    </tr>
+   </thead>
+   <tbody>  
+    <tr>   
+        <td>Hola beats</td>  
+        <td>Gratis</td>  
+      </tr>
+      <tr>   
+          <td>Gomero</td>  
+          <td>19.90</td>  
+        </tr>
+        <tr>   
+          <td>Sansiveria</td>  
+          <td>39.90</td>  
+        </tr>
+   </tbody>
+   <tfoot>  
+        <td></td>
+        <td>Total: 50.99</td>
+   </tfoot>
+</table>
+
+
+
+
+
+
+
+<!--    ul es lista no ordenada -->
+<ul>    
+
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+    <li>Elemento 4</li>
+</ul>
+
+<!--    ol es lista ordenada -->
+<ol>
+    <li value="50">Elemento 1</li> 
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+    <li>Elemento 4</li>
+    <li>
+        <ol>
+            <li style="list-style-type: lower-roman">Elemento 1</li>
+            <li style="list-style-type: lower-roman;">Elemento 2</li>
+            <li style="list-style-type: lower-roman;">Elemento 3</li>
+            <li style="list-style-type: lower-roman;">Elemento 4</li>
+        </ol>
+    </li>
+</ol>   
+
+
+
+
+
+
+
+    <form action="/formulario" method="POST"> 
+        <label for="nombre"> Nombre</label>
+        <input value="chanchito" type="text" id="nombre" name="nombre" placeholder="Ajuaná" />
+        <br><br>
+        <label for="apellido">Apellido</label>
+        <input value="feliz" type="text" id="apellido" name="apellido" placeholder="Ajuanáaaaaa" />
+        <br><br>
+        <label for="comentario">Comentario</label>
+        <br><br>
+        <textarea cols="50" rows="10" id="comentario" placeholder="ingrese comentario" name="comentario">este es un valor por defecto</textarea> 
+        <br><br>
+        <button type="button">Tipo botón</button>
+        <button type="reset">Tipo reset</button>
+        <button type="submit">Tipo submit</button>
+    </form>
+
+     <h1>mi primer heading</h1>
+     <h2>mi segundo heading</h2>
+     <h3>mi tercer heading</h3>
+     <h4>mi cuarto heading</h4>
+     <h5>mi quinto heading</h5>
+     <h6>Chanchito feliz</h6>
+     <p>Chanchito feliz esta muy feliz</p>
+     <p>Chanchito triste esta muy triste</p>
+     <hr>
+     <h2>Chanchita caty</h2>
+     <p>
+        este texto es <span style="color:blue"> mucho mas largo </span> y es para mostrar <br><br> la etiqueta de span
+    </p>
+     <!--   comentario y no
+         aparecerá -->
+    <a target="_blank" href="https://www.linkedin.com/in/katherine-f-232420135/s">LinkedIn</a> 
+    <br><br>
+    <img src="img/IMG_1063.JPG"  height="400"/>
+
+</body>
+</html>

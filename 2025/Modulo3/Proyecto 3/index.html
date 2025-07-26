@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Fire | Inicio</title>
+  <link rel="icon" href="img/icono.jpeg" type="image/jpeg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+       <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+         <img src="img/icono.jpeg" alt="Logo Our Fire" width="40" height="40">
+         <span class="fw-bold fs-4 text-white">Our Fire</span>
+       </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Modelos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Accesorios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Ofertas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay">
+        <h1>Bienvenidos a Nuestra Tienda</h1>
+        <p>Descubre productos únicos llenos de Our Fire</p>
+      </div>
+    </section>
+
+    <section class="productos">
+      <div class="producto">
+        <h3>Fogón Clásico</h3>
+        <img src="img/Fogonclasico.png" alt="Fogón clásico Our Fire">
+        <p>$49.990</p>
+        <button class="btn-comprar">Comprar ahora</button>
+      </div>
+      <div class="producto fogon-portatil">
+        <img src="img/portatil.png" alt="Fogón portátil armable con placas">
+        <h3>Fogón Portátil Armable con Placas</h3>
+        <p>Fácil de trasladar e instalar. Ideal para camping o terrazas pequeñas.</p>
+        <p class="destacado">¡Incluye bolso de transporte! Un must-have para tus escapadas 🔥</p>
+        <button class="btn-comprar">Comprar ahora</button>
+      </div>
+      <div class="producto">
+        <h3>Parrilla Básica</h3>
+        <img src="img/premium.png" alt="Fogón premium Our Fire">
+        <p>$69.990</p>
+        <button class="btn-comprar">Comprar ahora</button>
+      </div>
+      <div class="producto">
+        <h3>Tetera</h3>
+        <img src="img/tetera.png" alt="Tetera Our Fire">
+        <p>$15.990</p>
+        <button class="btn-comprar">Comprar ahora</button>
+      </div>
+    </section>
+
+    <section class="testimonios">
+      <h2>Lo que dicen nuestros clientes</h2>
+
+      <div class="testimonio">
+        <p>"El fogón clásico superó mis expectativas. Ideal para nuestras noches en el patio."</p>
+        <cite>- María González</cite>
+      </div>
+
+      <div class="testimonio">
+        <p>"Excelente calidad y diseño. ¡Recomiendo Our Fire al 100%!"</p>
+        <cite>- Pedro Rojas</cite>
+      </div>
+    </section>
+
+
+    <section id="recomendaciones" class="recomendaciones">
+      <h2>Recomendaciones de Seguridad y Mantenimiento</h2>
+      <ul>
+        <li>Instala los fogones en superficies estables y al aire libre.</li>
+        <li>No dejes los fogones encendidos sin supervisión.</li>
+        <li>Limpia las cenizas una vez frío el fogón.</li>
+        <li>Evita el uso de combustibles inflamables como bencina o alcohol.</li>
+        <li>Guarda el fogón en un lugar seco para prolongar su vida útil.</li>
+      </ul>
+    </section>
+  </main>
+
+  <section class="contacto bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4" style="color: #FF5722;">Contáctanos</h2>
+      <form id="formContacto" class="mx-auto" style="max-width: 600px;">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre completo</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="email" placeholder="tucorreo@ejemplo.com" required>
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        </div>
+        <div class="d-grid">
+          <button type="submit" class="btn btn-primary" style="background-color: #FF5722; border: none;">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+<footer class="footer-redes">
+  <p>&copy; 2025 Our Fire. Todos los derechos reservados.</p>
+  <div class="redes-sociales">
+    <a href="https://www.facebook.com/OurFireEjemplo" target="_blank" rel="noopener" aria-label="Facebook">
+      <img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook">
+    </a>
+    <a href="https://twitter.com/OurFireEjemplo" target="_blank" rel="noopener" aria-label="Twitter">
+      <img src="https://cdn-icons-png.flaticon.com/24/733/733579.png" alt="Twitter">
+    </a>
+    <a href="https://www.instagram.com/OurFireEjemplo" target="_blank" rel="noopener" aria-label="Instagram">
+      <img src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png" alt="Instagram">
+    </a>
+  </div>
+</footer>
+
+  <!-- Bootstrap JS con Popper incluido -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('formContacto').addEventListener('submit', function(event){
+      event.preventDefault(); // evita recargar la página
+      alert('¡Gracias por contactarnos! Te responderemos pronto.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
