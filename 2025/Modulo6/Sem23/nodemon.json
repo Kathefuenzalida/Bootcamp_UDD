@@ -1,0 +1,4 @@
+{
+  "watch": ["index.js", "models", "routes", "middleware", "config"],
+  "ignore": ["node_modules", ".git", ".env"]
+}
