@@ -1,4 +1,5 @@
 const User = require('../models/User');
+const Cart = require('../models/Cart');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
@@ -14,7 +15,9 @@ exports.createUser = async (req, res) => {
     const salt = await bcrypt.genSalt(10);
     const hashedPassword = await bcrypt.hash(password, salt);
 
-    const newUser = await User.create({ username, email, password: hashedPassword });
+    const newCart = await Cart.create({});
+
+    const newUser = await User.create({ username, email, password: hashedPassword, cart: newCart});
     return res.status(201).json({ datos: newUser });
   } catch (error) {
     return res.status(500).json({ message: 'Error al registrar usuario', error: error.message });
