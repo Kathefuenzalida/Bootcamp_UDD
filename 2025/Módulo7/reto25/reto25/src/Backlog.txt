@@ -1,0 +1,34 @@
+1. Configuración inicial
+
+Crear repo en GitHub.
+Configurar Vite + React Router.
+Crear estructura de carpetas.
+
+2. Gestión de publicaciones
+
+Crear estado global con Context + useReducer.
+Acción: crear publicación.
+Acción: editar publicación.
+Acción: eliminar publicación.
+Mostrar listado de publicaciones.
+
+3. Comentarios
+
+Acción: agregar comentario a publicación.
+Mostrar comentarios en PostDetail.
+
+4. Navegación
+
+Crear NavBar con enlaces.
+Rutas: lista, detalle, nuevo, editar.
+
+5. Estilos
+
+Crear CSS base (App.css).
+Estilizar cards, formularios y navegación.
+
+6. Extras opcionales
+
+Guardar estado en localStorage.
+Manejar errores simples (post no encontrado).
+Accesibilidad mínima (labels, focus).
